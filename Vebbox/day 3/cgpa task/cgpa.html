@@ -1,0 +1,138 @@
+<script>
+  
+  var name=prompt("Enter Your Name");
+  var dept=prompt("Enter Your DEPT");
+
+  console.log("NAME       :"+name);
+  console.log("DEPARTMENT :"+dept);
+
+
+    var sub1=parseInt(prompt("Enter Your subject 1 mark"));
+    var sub2=parseInt(prompt("Enter Your subject 2 mark"));
+    var sub3=parseInt(prompt("Enter Your subject 3 mark"));
+    var sub4=parseInt(prompt("Enter Your subject 4 mark"));
+    var sub5=parseInt(prompt("Enter Your subject 5 mark"));
+    var sub6=parseInt(prompt("Enter Your subject 6 mark"));
+
+   console.log(" ");
+   
+  (sub1 >= 90 ) ? console.log("Sub1 Grade O"):
+  (sub1 >= 80 ) ? console.log("Sub1 Grade A+"):
+  (sub1 >= 70 ) ? console.log("Sub1 Grade A"):
+  (sub1 >= 60 ) ? console.log("Sub1 Grade B+"):
+  (sub1 >= 50 ) ? console.log("Sub1 Grade B"):
+  (sub1 >= 45 ) ? console.log("Sub1 Grade C"):
+  (45  > sub1 ) ? console.log("Sub1 Grade U"):console;
+  (45  > sub1 ) ?(sub1=(sub1-sub1)-10):console;
+
+ var sub1GP=parseInt((sub1/10)+1);
+//  console.log("Subject Mark"+sub1);
+//  console.log("Grade Mark"+sub1GP);
+
+ 
+  (sub2 >= 90 ) ? console.log("sub2 Grade O"):
+  (sub2 >= 80 ) ? console.log("sub2 Grade A+"):
+  (sub2 >= 70 ) ? console.log("sub2 Grade A"):
+  (sub2 >= 60 ) ? console.log("sub2 Grade B+"):
+  (sub2 >= 50 ) ? console.log("sub2 Grade B"):
+  (sub2 >= 45 ) ? console.log("sub2 Grade C"):
+  (45  > sub2 ) ? console.log("sub2 Grade U"):console;
+  (45  > sub2 ) ?(sub1=(sub2-sub2)-10):console;
+
+  var sub2GP=parseInt((sub2/10)+1);
+  // console.log("Subject Mark"+sub2);
+  // console.log("Grade Mark"+sub2GP);
+
+
+   (sub3 >= 90 ) ? console.log("sub3 Grade O"):
+   (sub3 >= 80 ) ? console.log("sub3 Grade A+"):
+   (sub3 >= 70 ) ? console.log("sub3 Grade A"):
+   (sub3 >= 60 ) ? console.log("sub3 Grade B+"):
+   (sub3 >= 50 ) ? console.log("sub3 Grade B"):
+   (sub3 >= 45 ) ? console.log("sub3 Grade C"):
+   (45  > sub3 ) ? console.log("sub3 Grade U"):console;
+   (45  > sub3 ) ?(sub3=(sub3-sub3)-10):console;
+
+   var sub3GP=parseInt((sub3/10)+1);
+  //  console.log("Subject Mark"+sub3);
+  //  console.log("Grade Mark"+sub3GP);
+
+   (sub4 >= 90 ) ? console.log("sub4 Grade O"):
+   (sub4 >= 80 ) ? console.log("sub4 Grade A+"):
+   (sub4 >= 70 ) ? console.log("sub4 Grade A"):
+   (sub4 >= 60 ) ? console.log("sub4 Grade B+"):
+   (sub4 >= 50 ) ? console.log("sub4 Grade B"):
+   (sub4 >= 45 ) ? console.log("sub4 Grade C"):
+   (45  > sub4 ) ? console.log("sub4 Grade U"):console;
+   (45  > sub4 ) ?(sub4=(sub4-sub4)-10):console;
+
+   var sub4GP=parseInt((sub4/10)+1);
+  //  console.log("Subject Mark"+sub4);
+  //  console.log("Grade Mark"+sub4GP);
+
+   (sub5 >= 90 ) ? console.log("sub5 Grade O"):
+   (sub5 >= 80 ) ? console.log("sub5 Grade A+"):
+   (sub5 >= 70 ) ? console.log("sub5 Grade A"):
+   (sub5 >= 60 ) ? console.log("sub5 Grade B+"):
+   (sub5 >= 50 ) ? console.log("sub5 Grade B"):
+   (sub5 >= 45 ) ? console.log("sub5 Grade C"):
+   (45  > sub5 ) ? console.log("sub5 Grade U"):console;
+   (45  > sub5 ) ?(sub5=(sub5-sub5)-10):console;
+
+   var sub5GP=parseInt((sub5/10)+1);
+  //  console.log("Subject Mark"+sub5);
+  //  console.log("Grade Mark"+sub5GP);
+
+   (sub6 >= 90 ) ? console.log("sub6 Grade O"):
+   (sub6 >= 80 ) ? console.log("sub6 Grade A+"):
+   (sub6 >= 70 ) ? console.log("sub6 Grade A"):
+   (sub6 >= 60 ) ? console.log("sub6 Grade B+"):
+   (sub6 >= 50 ) ? console.log("sub6 Grade B"):
+   (sub6 >= 45 ) ? console.log("sub6 Grade C"):
+   (45  > sub6 ) ? console.log("sub6 Grade U"):console;
+   (45  > sub6 ) ?(sub6=(sub6-sub6)-10):console;
+
+   var sub6GP=parseInt((sub6/10)+1);
+  //  console.log("Subject Mark"+sub6);
+  //  console.log("Grade Mark"+sub6GP);
+
+(sub1 < 45) ? sub1=0:sub1=1;
+(sub2 < 45) ? sub2=0:sub2=1;
+(sub3 < 45) ? sub3=0:sub3=1;
+(sub4 < 45) ? sub4=0:sub4=1;
+(sub5 < 45) ? sub5=0:sub5=1;
+(sub6 < 45) ? sub6=0:sub6=1;
+
+console.log(" ");
+
+   var CGPA=parseInt(sub1GP+sub2GP+sub3GP+sub4GP+sub5GP+sub6GP);
+   var div=parseInt(sub1+sub2+sub3+sub4+sub5+sub6);
+
+   console.log("your Averge Grade Point is:");
+   console.log("-----------------");
+   console.log("       " + CGPA );
+   console.log("-----------------");
+
+   console.log(" ");
+
+   console.log("your are Passed in " + div + " Subjects");
+
+   console.log(" ");
+
+   CGPA=CGPA/div;
+
+   console.log("your average CGPA is:");
+   console.log("-----------------");
+   console.log("      " + CGPA );
+   console.log("-----------------");
+
+   console.log(" ");
+
+   var percentage=CGPA*9.5;
+
+   console.log("Your Total Percentage is:");
+   console.log("-----------------");
+   console.log("     "+percentage+"%");
+   console.log("-----------------");
+    
+</script>

@@ -1,0 +1,18 @@
+day 1 (28/11/2024)
+
+
+front end - its runs in local host
+back end = its runs in server . output displayed in local host
+
+change the console in daino game in chrome.
+
+code: Runner.prototype.gameOver=function name(params) {
+    
+}
+
+
+* The main differences between Web 1.0 and Web 2.0 are that Web 1.0 was read-only, while Web 2.0 is interactive and social: 
+
+* Web 1.0 was mostly static information provided by a small number of creators,
+  while Web 2.0 is dynamic and allows users to create and share their own content. 
+
